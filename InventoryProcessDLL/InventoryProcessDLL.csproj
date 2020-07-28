@@ -31,6 +31,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="NewEventLogDLL">
+      <HintPath>..\..\Blue Jay Class Library\NewEventLogDLL.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -41,8 +44,276 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FindProjectMaterialUsedForProjectDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FindProjectMaterialUsedForProjectDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FindProjectMaterialUsedOverDateRangeDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FindProjectMaterialUsedOverDateRangeDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FindReturnedInventoryByEmployeeIDDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FindReturnedInventoryByEmployeeIDDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FindReturnedInventoryForTodayDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FindReturnedInventoryForTodayDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FindReturnedInventoryOverDateRangeDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FindReturnedInventoryOverDateRangeDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FindWIPInventoryPartWarehouseDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FindWIPInventoryPartWarehouseDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FindWIPInventoryTotalDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FindWIPInventoryTotalDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FindWIPInventoryWarehouseDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FindWIPInventoryWarehouseDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="InsertProjectMaterialUsedEntry.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>InsertProjectMaterialUsedEntry.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="InsertReturnedInventoryEntry.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>InsertReturnedInventoryEntry.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="InsertWIPInventoryEntry.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>InsertWIPInventoryEntry.xsd</DependentUpon>
+    </Compile>
     <Compile Include="InventoryProcessClass.cs" />
+    <Compile Include="ProjectMaterialUsedDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProjectMaterialUsedDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="ReturnedInventoryDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReturnedInventoryDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateWIPInventoryEntry.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UpdateWIPInventoryEntry.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="VoidReturnInventoryEntry.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VoidReturnInventoryEntry.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="WIPInventoryDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WIPInventoryDataSet.xsd</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="FindProjectMaterialUsedForProjectDataSet.xsc">
+      <DependentUpon>FindProjectMaterialUsedForProjectDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FindProjectMaterialUsedForProjectDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FindProjectMaterialUsedForProjectDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FindProjectMaterialUsedForProjectDataSet.xss">
+      <DependentUpon>FindProjectMaterialUsedForProjectDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FindProjectMaterialUsedOverDateRangeDataSet.xsc">
+      <DependentUpon>FindProjectMaterialUsedOverDateRangeDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FindProjectMaterialUsedOverDateRangeDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FindProjectMaterialUsedOverDateRangeDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FindProjectMaterialUsedOverDateRangeDataSet.xss">
+      <DependentUpon>FindProjectMaterialUsedOverDateRangeDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FindReturnedInventoryByEmployeeIDDataSet.xsc">
+      <DependentUpon>FindReturnedInventoryByEmployeeIDDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FindReturnedInventoryByEmployeeIDDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FindReturnedInventoryByEmployeeIDDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FindReturnedInventoryByEmployeeIDDataSet.xss">
+      <DependentUpon>FindReturnedInventoryByEmployeeIDDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FindReturnedInventoryForTodayDataSet.xsc">
+      <DependentUpon>FindReturnedInventoryForTodayDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FindReturnedInventoryForTodayDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FindReturnedInventoryForTodayDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FindReturnedInventoryForTodayDataSet.xss">
+      <DependentUpon>FindReturnedInventoryForTodayDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FindReturnedInventoryOverDateRangeDataSet.xsc">
+      <DependentUpon>FindReturnedInventoryOverDateRangeDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FindReturnedInventoryOverDateRangeDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FindReturnedInventoryOverDateRangeDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FindReturnedInventoryOverDateRangeDataSet.xss">
+      <DependentUpon>FindReturnedInventoryOverDateRangeDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FindWIPInventoryPartWarehouseDataSet.xsc">
+      <DependentUpon>FindWIPInventoryPartWarehouseDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FindWIPInventoryPartWarehouseDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FindWIPInventoryPartWarehouseDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FindWIPInventoryPartWarehouseDataSet.xss">
+      <DependentUpon>FindWIPInventoryPartWarehouseDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FindWIPInventoryTotalDataSet.xsc">
+      <DependentUpon>FindWIPInventoryTotalDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FindWIPInventoryTotalDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FindWIPInventoryTotalDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FindWIPInventoryTotalDataSet.xss">
+      <DependentUpon>FindWIPInventoryTotalDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FindWIPInventoryWarehouseDataSet.xsc">
+      <DependentUpon>FindWIPInventoryWarehouseDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FindWIPInventoryWarehouseDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FindWIPInventoryWarehouseDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FindWIPInventoryWarehouseDataSet.xss">
+      <DependentUpon>FindWIPInventoryWarehouseDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="InsertProjectMaterialUsedEntry.xsc">
+      <DependentUpon>InsertProjectMaterialUsedEntry.xsd</DependentUpon>
+    </None>
+    <None Include="InsertProjectMaterialUsedEntry.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>InsertProjectMaterialUsedEntry.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="InsertProjectMaterialUsedEntry.xss">
+      <DependentUpon>InsertProjectMaterialUsedEntry.xsd</DependentUpon>
+    </None>
+    <None Include="InsertReturnedInventoryEntry.xsc">
+      <DependentUpon>InsertReturnedInventoryEntry.xsd</DependentUpon>
+    </None>
+    <None Include="InsertReturnedInventoryEntry.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>InsertReturnedInventoryEntry.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="InsertReturnedInventoryEntry.xss">
+      <DependentUpon>InsertReturnedInventoryEntry.xsd</DependentUpon>
+    </None>
+    <None Include="InsertWIPInventoryEntry.xsc">
+      <DependentUpon>InsertWIPInventoryEntry.xsd</DependentUpon>
+    </None>
+    <None Include="InsertWIPInventoryEntry.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>InsertWIPInventoryEntry.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="InsertWIPInventoryEntry.xss">
+      <DependentUpon>InsertWIPInventoryEntry.xsd</DependentUpon>
+    </None>
+    <None Include="ProjectMaterialUsedDataSet.xsc">
+      <DependentUpon>ProjectMaterialUsedDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ProjectMaterialUsedDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ProjectMaterialUsedDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ProjectMaterialUsedDataSet.xss">
+      <DependentUpon>ProjectMaterialUsedDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="ReturnedInventoryDataSet.xsc">
+      <DependentUpon>ReturnedInventoryDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ReturnedInventoryDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ReturnedInventoryDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ReturnedInventoryDataSet.xss">
+      <DependentUpon>ReturnedInventoryDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="UpdateWIPInventoryEntry.xsc">
+      <DependentUpon>UpdateWIPInventoryEntry.xsd</DependentUpon>
+    </None>
+    <None Include="UpdateWIPInventoryEntry.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>UpdateWIPInventoryEntry.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UpdateWIPInventoryEntry.xss">
+      <DependentUpon>UpdateWIPInventoryEntry.xsd</DependentUpon>
+    </None>
+    <None Include="VoidReturnInventoryEntry.xsc">
+      <DependentUpon>VoidReturnInventoryEntry.xsd</DependentUpon>
+    </None>
+    <None Include="VoidReturnInventoryEntry.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>VoidReturnInventoryEntry.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="VoidReturnInventoryEntry.xss">
+      <DependentUpon>VoidReturnInventoryEntry.xsd</DependentUpon>
+    </None>
+    <None Include="WIPInventoryDataSet.xsc">
+      <DependentUpon>WIPInventoryDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="WIPInventoryDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>WIPInventoryDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="WIPInventoryDataSet.xss">
+      <DependentUpon>WIPInventoryDataSet.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
